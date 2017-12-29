@@ -1,0 +1,26 @@
+div.treasure {
+    height: 140px;
+    overflow: hidden;
+}
+
+div.selectable {
+    cursor: pointer;
+}
+
+span.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.red-label {
+    background-color: #db2828 !important;
+}
+
+div.blue-label {
+    background-color: #2185d0 !important;
+}
+
+div.black-label {
+    background-color: #1b1c1d !important;
+}

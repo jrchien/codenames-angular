@@ -1,0 +1,9 @@
+<div class="ui center aligned header">{{deck.name}}</div>
+<div class="ui divider"></div>
+<div class="ui equal width center aligned grid">
+    <div class="row" *ngFor="let r of getDimensionsArray()">
+        <div class="column" *ngFor="let c of getDimensionsArray()">
+            <app-treasure-card [card]="getCardInDeck(c, r)"></app-treasure-card>
+        </div>
+    </div>
+</div>

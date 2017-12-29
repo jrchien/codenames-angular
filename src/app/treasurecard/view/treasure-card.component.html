@@ -1,0 +1,13 @@
+<div *ngIf="card" class="ui card">
+  <div class="treasure selectable image" *ngIf="showImage">
+    <img [src]="getImageUrl()" class="ui tiny image">
+  </div>
+  <div class="treasure selectable content" *ngIf="!showImage" (click)="selectCard()">
+    <span class="center-text">{{card.name}}</span>
+  </div>
+  <div class="extra content black-label">
+    <div class="right floated author">
+      <i class="inverted retweet link icon" (mouseenter)="revealImage()" (mouseleave)="hideImage()"></i>
+    </div>
+  </div>
+</div>

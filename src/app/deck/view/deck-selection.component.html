@@ -1,0 +1,12 @@
+<div class="ui grid">
+    <sui-select class="selection" [(ngModel)]="selectedDeck" [options]="decks" labelField="name" placeholder="Select a deck"
+        (selectedOptionChange)="onDeckSelected($event)" #deckSelect>
+        <sui-select-option *ngFor="let option of deckSelect.filteredOptions" [value]="option">
+        </sui-select-option>
+    </sui-select>
+    <sui-select class="selection" [(ngModel)]="selectedDimension" [options]="dimensionOptions" placeholder="Select dimensions"
+        #dimensionSelect>
+        <sui-select-option *ngFor="let option of dimensionSelect.filteredOptions" [value]="option">
+        </sui-select-option>
+    </sui-select>
+</div>
